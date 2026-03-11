@@ -1,0 +1,17 @@
+.projects-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 18px; }
+.project-card { display: flex; flex-direction: column; gap: 10px; border-top: 2px solid var(--pc) !important; animation: fadeUp 0.5s ease both; }
+.project-top { display: flex; justify-content: space-between; align-items: center; }
+.project-type { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .07em; text-transform: uppercase; padding: 3px 10px; border-radius: 100px; border: 1px solid; }
+.project-links { display: flex; gap: 8px; }
+.project-link { color: var(--muted); text-decoration: none; transition: color 0.2s; display: flex; align-items: center; }
+.project-link:hover { color: var(--pc); }
+.project-title { font-size: 17px; font-weight: 700; color: var(--text); font-family: var(--font-display); }
+.project-desc { font-size: 13.5px; color: #9090b8; line-height: 1.65; flex: 1; }
+.project-tech { display: flex; flex-wrap: wrap; gap: 7px; margin-top: auto; }
+.tech-tag {
+  background: var(--bg3); border: 1px solid var(--border);
+  color: var(--muted); font-size: 11px; padding: 3px 9px;
+  border-radius: 5px; font-family: var(--font-mono);
+}
+
+@media (max-width: 720px) { .projects-grid { grid-template-columns: 1fr; } }

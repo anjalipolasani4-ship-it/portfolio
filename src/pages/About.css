@@ -1,0 +1,38 @@
+.about-grid {
+  display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px;
+}
+.about-bio { display: flex; flex-direction: column; gap: 16px; line-height: 1.8; font-size: 15.5px; color: #c0c0d8; }
+.about-bio strong { color: var(--accent); font-weight: 600; }
+
+.info-card h3, .interests-card h3 {
+  font-family: var(--font-mono); font-size: 11px;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 16px;
+}
+.info-card ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.info-card li { display: flex; justify-content: space-between; align-items: center; font-size: 14px; }
+.info-key { color: var(--muted); font-size: 12px; font-family: var(--font-mono); }
+.info-card li span:last-child { color: var(--text); font-weight: 500; text-align: right; }
+
+.interests-card { margin-top: 16px; }
+.interests-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.interest-tag {
+  background: rgba(124,109,250,.1); border: 1px solid rgba(124,109,250,.2);
+  color: var(--accent); font-size: 12px; padding: 4px 11px;
+  border-radius: 100px; font-family: var(--font-mono);
+}
+
+.section-heading {
+  font-family: var(--font-display); font-size: 28px; font-weight: 700;
+  margin-bottom: 24px; color: var(--text);
+}
+.values-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
+.value-card { display: flex; flex-direction: column; gap: 8px; }
+.value-icon { font-size: 26px; }
+.value-card h4 { font-size: 15px; font-weight: 600; color: var(--text); }
+.value-card p { font-size: 13.5px; color: var(--muted); line-height: 1.6; }
+
+@media (max-width: 768px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .values-grid { grid-template-columns: 1fr; }
+}
